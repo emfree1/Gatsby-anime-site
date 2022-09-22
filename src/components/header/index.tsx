@@ -2,6 +2,7 @@ import * as React from "react"
 import {
   Content,
   DateNow,
+  DateToDay,
   LinkTitle,
   SearchBlock,
   StyledHeader,
@@ -21,9 +22,7 @@ const Header = ({ setIsPopupOpen }) => {
         </SearchBlock>
         <DateNow>
           Today is the&nbsp;
-          {/*<DateToDay as="span">*/}
-          {/*  {day}th of {month}*/}
-          {/*</DateToDay>*/}
+          <DateToDay as="span">{/*  {day}th of {month}*/}</DateToDay>
         </DateNow>
         {/*<MobileDate>{shortMonth + ` ${day}` + 'th'}</MobileDate>*/}
       </Content>
